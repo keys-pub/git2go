@@ -2,7 +2,7 @@ package git
 
 /*
 #cgo windows CFLAGS: -I${SRCDIR}/windows/install/include/
-#cgo windows LDFLAGS: -L${SRCDIR}/windows/install/lib/ -lgit2 -lwinhttp -lrpcrt4 -lcrypt32 -lole32
+#cgo windows LDFLAGS: -L${SRCDIR}/windows/install/lib -lgit2
 #cgo darwin CFLAGS: -I${SRCDIR}/darwin/install/include/
 #cgo darwin LDFLAGS: -L${SRCDIR}/darwin/install/lib/ -lgit2 -framework CoreFoundation -framework Security -lz -L/usr/lib -liconv
 #cgo linux CFLAGS: -I${SRCDIR}/linux/install/include/
