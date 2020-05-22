@@ -1,3 +1,3 @@
-module github.com/libgit2/git2go/v30
+module github.com/keys-pub/git2go
 
 go 1.13
