@@ -1,11 +1,12 @@
-// +build static
-
 package git
 
 /*
-#cgo windows CFLAGS: -I${SRCDIR}/static-build/install/include/
-#cgo windows LDFLAGS: -L${SRCDIR}/static-build/install/lib/ -lgit2 -lwinhttp
-#cgo !windows pkg-config: --static ${SRCDIR}/static-build/install/lib/pkgconfig/libgit2.pc
+#cgo windows CFLAGS: -I${SRCDIR}/windows/install/include/
+#cgo windows LDFLAGS: -L${SRCDIR}/windows/install/lib/ -lgit2 -lwinhttp
+#cgo darwin CFLAGS: -I${SRCDIR}/darwin/install/include/
+#cgo darwin LDFLAGS: -L${SRCDIR}/darwin/install/lib/ -lgit2 -framework CoreFoundation -framework Security -lz -L/usr/lib -liconv
+#cgo linux CFLAGS: -I${SRCDIR}/linux/install/include/
+#cgo linux LDFLAGS: -L${SRCDIR}/linux/install/lib/ -lgit2
 #include <git2.h>
 
 #if LIBGIT2_VER_MAJOR != 1 || LIBGIT2_VER_MINOR != 0

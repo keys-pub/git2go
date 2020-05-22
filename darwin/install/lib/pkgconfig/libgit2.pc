@@ -1,0 +1,10 @@
+prefix="/Users/gabe/projects/git2go/static-build/install"
+libdir="/Users/gabe/projects/git2go/static-build/install/lib"
+includedir="/Users/gabe/projects/git2go/static-build/install/include"
+
+Name: libgit2
+Description: The git library, take 2
+Version: 1.0.0
+Libs: -L${libdir} -lgit2
+Libs.private: -framework CoreFoundation -framework Security -lz -L/usr/lib -liconv
+Cflags: -I${includedir} 
