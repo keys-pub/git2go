@@ -1,6 +1,6 @@
-prefix="C:/Users/gabri/Projects/keys.pub/git2go/static-build/install"
-libdir="C:/Users/gabri/Projects/keys.pub/git2go/static-build/install/lib"
-includedir="C:/Users/gabri/Projects/keys.pub/git2go/static-build/install/include"
+prefix="C:/Users/gabri/Projects/keys.pub/git2go/dynamic-build/install"
+libdir="C:/Users/gabri/Projects/keys.pub/git2go/dynamic-build/install/lib"
+includedir="C:/Users/gabri/Projects/keys.pub/git2go/dynamic-build/install/include"
 
 Name: libgit2
 Description: The git library, take 2
