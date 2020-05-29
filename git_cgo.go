@@ -4,9 +4,9 @@ package git
 #cgo windows CFLAGS: -I${SRCDIR}/windows/install/include/
 #cgo windows LDFLAGS: -L${SRCDIR}/windows/install/lib -lgit2
 #cgo darwin CFLAGS: -I${SRCDIR}/darwin/install/include/
-#cgo darwin LDFLAGS: -L${SRCDIR}/darwin/install/lib/ -lgit2 -framework CoreFoundation -framework Security -lz -L/usr/lib -liconv /usr/local/Cellar/libssh2/1.9.0_1/lib/libssh2.a /usr/local/Cellar/openssl@1.1/1.1.1g/lib/libcrypto.a
+#cgo darwin LDFLAGS: -L${SRCDIR}/darwin/install/lib/ -lgit2 -framework CoreFoundation -framework Security -lz -L/usr/lib -liconv
 #cgo linux CFLAGS: -I${SRCDIR}/linux/install/include/
-#cgo linux LDFLAGS: -L${SRCDIR}/linux/install/lib/ -lgit2 -lrt -lpthread -lssh2 -lz -lssl -lcrypto
+#cgo linux LDFLAGS: -L${SRCDIR}/linux/install/lib/ -lgit2 -lrt -lpthread -lz
 #include <git2.h>
 
 #if LIBGIT2_VER_MAJOR != 1 || LIBGIT2_VER_MINOR != 0
